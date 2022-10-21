@@ -7,14 +7,14 @@ and compare the results between the original pre-trained and the model after fin
 # 🌟 Highlight
 
 # Table of Contents
-1. [Introduction](#1.-Introduction) <br>
-2. [Data Preparation](#2.-data-preparation) <br>
+1. [Introduction](##1.-introduction) <br>
+2. [Data Preparation](##2.-data-preparation) <br>
 3. Model<br>
-   - [3.1 VGG16](#3.1-vgg16)<br>
-   - [3.2 NASNetMobile](#3.2-nasnetmobile) <br>
-   - [3.3 DenseNet121](#3.3-densenet121) <br>
-4. [Prediction](#4.-prediction) <br>
-5. [Result](#5.-result) <br>
+   - [3.1 VGG16](##3.1-vgg16)<br>
+   - [3.2 NASNetMobile](##3.2-nasnetmobile) <br>
+   - [3.3 DenseNet121](##3.3-densenet121) <br>
+4. [Prediction](##4.-prediction) <br>
+5. [Result](##5.-result) <br>
 6. [Discussion](#6.-discussion) <br>
 7. [Conclusion](#7.-conclusion) <br>
 8. [Reference](#8.-reference) <br>
@@ -22,7 +22,7 @@ and compare the results between the original pre-trained and the model after fin
 10. [Member, Contribution and Responsibility](#10.-member,-contribution-and-responsibility) <br>
 11. [End Credit](#11.-end-credit) <br>
 
-# 1. Introduction
+## 1. Introduction
 **The 5 Painting Genres**
 Traditional Classification of Paintings
 
