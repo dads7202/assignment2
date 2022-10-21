@@ -50,9 +50,15 @@ Total images are 1,106 images, including,
 4. Portrait Painting 235 images
 5. Still Life Painting 228 images
 
+- Data Collection <br>
+We collected images from various sources most of photos are public domain painting. <br>
+You can see the reference of each photo in [datasource]( https://github.com/dads7202/assignment2/blob/main/fileReference/Reference.xlsx).
 
-We collected data from various sources most of photos are public domain painting. <br>
-You can see the reference of each photo in [datasource]( https://github.com/dads7202/assignment2/blob/main/fileReference/Reference.xlsx)
+- Data preparation <br>
+   - 1. Get the Image Dataset Paths and Load Image Datasets from path.
+   - 2. Apply Augmentations, for traing dataset we have augmented images by rescale image to 1/255 from original image, shear image by 0.2 degrees, random zoom image, do both horizontal and wertical flip randomly. 
+   - 3. Split data into training_set and testing_set with testing set = 0.1 of total images.
+
 
 ## 3.1 VGG16
 
