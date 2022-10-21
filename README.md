@@ -7,7 +7,7 @@ and compare the results between the original pre-trained and the model after fin
 ## 🌟 Highlight
 
 ## Table of Contents
-1. [Introduction](##1.-Introduction) <br>
+1. [Introduction](#1.-Introduction) <br>
 2. [Data Preparation](##2.-data-preparation) <br>
 3. Model<br>
    - [3.1 VGG16](##3.1-vgg16)<br>
