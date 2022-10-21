@@ -74,11 +74,32 @@ We use `ImageNet` as the pre-trained weights on model, `Adam` as optimizer, cate
 ## 6. Discussion
 
 ## 7. Conclusion
+In this project aims to build the best CNN model with pre-trained models that gives the highest accuracy for multi-class image classification of 5 types of painting. We experiment with original (ImageNet) and pre-trained models including VGG16, NASNetMobile, and DenseNet121 and compare the results between the original pre-trained and models after fine-tuning. 
+
+Experimental results show that  
+- The performance models of all fine-tuning CNN are better than the imageNet on our dataset. Our datasets do not exist in the original pretrained model. 
+- The performance models of fine-tuning CNN might improve the accuracy or might not, it really depends on the complexity of the problem. 
+- The model with the most accuracy on test dataset is DenseNet121 (model 1 the fine-tuning CNN). 
 
 ## 8. Reference
+Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9SUWL8Vyt67vVnleLwDnme6V?usp=sharing 
 
 ## 9. Citing
+```  
+    @inproceedings{plummerCITE2018, 
+	Author = {Nidchapan N., Prapatsorn T., Chotika B., Juthamas P., Naliya M.}, 
+	Title = {CNN classification: The Academic Hierarchy of the Genres}, 
+	Year = {2022}, 
+  	howpublished = "\url{https://github.com/dads7202/assignment2}" 
+    } 
+```  
 
 ## 10. Member, Contribution and Responsibility
 
+
+
+
 ## 11. End Credit
+This project is a part of subject DADS7202. Data Analytics and Data Science. NIDA
+
+
