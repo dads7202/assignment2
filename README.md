@@ -4,25 +4,25 @@ The objective of this project is `multi-class image classification`of `Fine-Art 
 To build the best model that gives the highest accuracy for this task, we experiment with pre-trained models including VGG16, NASNetMobile, and DenseNet121 
 and compare the results between the original pre-trained and the model after fine-tuning.
 
-## 🌟 Highlight
+# 🌟 Highlight
 
-## Table of Contents
+# Table of Contents
 1. [Introduction](#1.-Introduction) <br>
-2. [Data Preparation](##2.-data-preparation) <br>
+2. [Data Preparation](#2.-data-preparation) <br>
 3. Model<br>
-   - [3.1 VGG16](##3.1-vgg16)<br>
-   - [3.2 NASNetMobile](##3.2-nasnetmobile) <br>
-   - [3.3 DenseNet121](##3.3-densenet121) <br>
-4. [Prediction](##4.-prediction) <br>
-5. [Result](##5.-result) <br>
-6. [Discussion](##6.-discussion) <br>
-7. [Conclusion](##7.-conclusion) <br>
-8. [Reference](##8.-reference) <br>
-9. [Citing](##9.-citing) <br>
-10. [Member, Contribution and Responsibility](##10.-member,-contribution-and-responsibility) <br>
-11. [End Credit](##11.-end-credit) <br>
+   - [3.1 VGG16](#3.1-vgg16)<br>
+   - [3.2 NASNetMobile](#3.2-nasnetmobile) <br>
+   - [3.3 DenseNet121](#3.3-densenet121) <br>
+4. [Prediction](#4.-prediction) <br>
+5. [Result](#5.-result) <br>
+6. [Discussion](#6.-discussion) <br>
+7. [Conclusion](#7.-conclusion) <br>
+8. [Reference](#8.-reference) <br>
+9. [Citing](#9.-citing) <br>
+10. [Member, Contribution and Responsibility](#10.-member,-contribution-and-responsibility) <br>
+11. [End Credit](#11.-end-credit) <br>
 
-## 1. Introduction
+# 1. Introduction
 **The 5 Painting Genres**
 Traditional Classification of Paintings
 
@@ -43,7 +43,7 @@ The five categories of fine art painting, listed in **order of their official ra
 5. **Still Life Painting**  Typically comprises an arrangement of objects (such as flowers or any group of mundane objects) laid out on a table. A form of still life painting that contains biblical or moral messages. **Famous still life artists** include Paul Cezanne, Salvador Dali, Gorges Braque
 
 
-## 2. Data Preparation
+# 2. Data Preparation
 
 Data in this assignment are painting images which classified into 5 categories.
 Total images are 1,106 images, including,
@@ -62,25 +62,25 @@ You can see the reference of each photo in [datasource]( https://github.com/dads
    - 2. Apply Augmentations, for traing dataset we have augmented images by rescale image to 1/255 from original image, shear image by 0.2 degrees, random zoom image, do both horizontal and wertical flip randomly. 
    - 3. Split data into training_set and testing_set with testing set = 0.1 of total images.
 
-## 3. Model
-## 3.1 VGG16
+# 3. Model
+# 3.1 VGG16
 
-## 3.2 NASNetMobile
+# 3.2 NASNetMobile
 
-## 3.3 DenseNet16
+# 3.3 DenseNet16
 
-## 4. Prediction
+# 4. Prediction
 
-## 5. Result
+# 5. Result
 
-## 6. Discussion
+# 6. Discussion
 
-## 7. Conclusion
+# 7. Conclusion
 
-## 8. Reference
+# 8. Reference
 
-## 9. Citing
+# 9. Citing
 
-## 10. Member, Contribution and Responsibility
+# 10. Member, Contribution and Responsibility
 
-## 11. End Credit
+# 11. End Credit
