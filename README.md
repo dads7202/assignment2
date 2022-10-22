@@ -7,7 +7,7 @@
 - Adding more layers to the model will increase accuracy and reduce loss.
 - However, it depends on the complexity of the problem. Too many layers can cause overfitting of the network. It performs best on the training data, but it won't be able to generalize to new unseen data.
 
-📍##  Table of Contents
+##  Table of Contents
 1. [Introduction](#1-introduction) <br>
 2. [Data Preparation](#2-data-preparation) <br>
 3. [Model](#3-model)<br>
