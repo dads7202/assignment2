@@ -94,9 +94,9 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 
 ## 3.3 DenseNet121
 ### 3.3.1 Epoch
-[Imgur](https://i.imgur.com/xGab4E9.png)
+![Imgur](https://i.imgur.com/xGab4E9.png)
 ### 3.3.2 Fine-tuning pre-trained DenseNet121 model
-[Imgur](https://i.imgur.com/ynlWDPk.png)
+![Imgur](https://i.imgur.com/ynlWDPk.png)
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
@@ -108,27 +108,27 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 
 ## 5. Result
 ### 5.1 Batch size 
-[Imgur](https://i.imgur.com/QBhOWz5.png)
+![Imgur](https://i.imgur.com/QBhOWz5.png)
 ### 5.2 Model1: VGG16
- [Imgur](https://i.imgur.com/nWTW8mn.png)
+![Imgur](https://i.imgur.com/nWTW8mn.png)
 ### 5.3 Model2: NASNetMobile
-[Imgur](https://i.imgur.com/KfXiwp1.png)
+![Imgur](https://i.imgur.com/KfXiwp1.png)
 ### 5.4 Model3: DenseNet121
-[Imgur](https://i.imgur.com/KdDIBpd.png)
+![Imgur](https://i.imgur.com/KdDIBpd.png)
 ### 5.5 Compare the best performance of each model
-[Imgur](https://i.imgur.com/Xe6Jap7.png)
+![Imgur](https://i.imgur.com/Xe6Jap7.png)
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 6. Discussion
 
-[Imgur](https://i.imgur.com/5XGwrZA.png)
+![Imgur](https://i.imgur.com/5XGwrZA.png)
 
-[Imgur](https://i.imgur.com/yU79ef6.png)
+![Imgur](https://i.imgur.com/yU79ef6.png)
 
-[Imgur](https://i.imgur.com/YjSRso1.png)
+![Imgur](https://i.imgur.com/YjSRso1.png)
 
-[![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
+![![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 7. Conclusion
