@@ -4,7 +4,7 @@
 ## 🌟 Highlight
 
 ## Table of Contents
-1. [Introduction](#1.-introduction) <br>
+1. ![Introduction](#1.-introduction) <br>
 2. [Data Preparation](#2.-data-preparation) <br>
 3. Model<br>
    - [3.1 VGG16](#3.1-vgg16)<br>
