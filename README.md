@@ -61,7 +61,7 @@ We use `ImageNet` as the pre-trained weights on model, `Adam` as optimizer, cate
 ## 3.1 VGG16
 Before fine-tuning the layers of pre-trained model, we attempt to optimize variables such as batch size, and epoch for original pre-trained vgg16 model. 
 ### 3.1.1 Batch Size
-we experiment with batch sizes of `16`, `32`, and `64` to find out which batch size results in the `highest accuracy` and `lowest loss` for test set at epoch 25, original pre-trained model. 
+we experiment with batch sizes of `16`, `32`, and `64` to find out which batch size results in the `highest accuracy` and `lowest loss` for test set at epoch 25, original pre-trained model. <br>
 ![Imgur](https://i.imgur.com/vhmiuNt.png)
 ![Imgur](https://i.imgur.com/RtNbLsn.png)
 ### 3.1.2 Epoch
@@ -73,10 +73,12 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 
 ## 3.2 NASNetMobile
 ### 3.2.1 Batch size
-
-
+![Imgur](https://i.imgur.com/tAFO8Vo.png)
+### 3.2.2 Fine-tuning pre-trained NASNetMobile model
+![Imgur](https://i.imgur.com/O0TSWyY.png)
 
 ## 3.3 DenseNet16
+###
 
 ## 4. Prediction
 
