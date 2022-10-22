@@ -73,7 +73,6 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 ### 3.1.3 Fine-tuning pre-trained VGG16 model
 ![Imgur](https://i.imgur.com/f5CClNA.png)
 
-<br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
@@ -83,31 +82,31 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 ### 3.2.2 Fine-tuning pre-trained NASNetMobile model
 ![Imgur](https://i.imgur.com/O0TSWyY.png)
 
-<br>
+
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 3.3 DenseNet16
 ###
 
-<br>
+
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 4. Prediction
 
-<br>
+
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 5. Result
 
-<br>
+
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 6. Discussion
 
-<br>
+
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
@@ -117,14 +116,12 @@ In this project aims to build the best CNN model with pre-trained models that gi
 Experimental results show that  
 - The performance models of all fine-tuning CNN are better than the imageNet on our dataset. Our datasets do not exist in the original pretrained model. 
 - The performance models of fine-tuning CNN might improve the accuracy or might not, it really depends on the complexity of the problem. 
-- The model with the most accuracy on test dataset is DenseNet121 (model 1 the fine-tuning CNN). 
-<br>
+- The model with the most accuracy on test dataset is DenseNet121 (model 1 the fine-tuning CNN). <br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 8. Reference
 Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9SUWL8Vyt67vVnleLwDnme6V?usp=sharing 
-<br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 9. Citing
@@ -136,13 +133,10 @@ Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9S
   	howpublished = "\url{https://github.com/dads7202/assignment2}" 
     } 
 ```  
-<br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 10. Member, Contribution and Responsibility
 
-
-<br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
