@@ -14,14 +14,13 @@
    - [3.1 VGG16](#31-vgg16)<br>
    - [3.2 NASNetMobile](#32-nasnetmobile) <br>
    - [3.3 DenseNet121](#33-densenet121) <br>
-4. [Prediction](#4-prediction) <br>
-5. [Result](#5-result) <br>
-6. [Discussion](#6-discussion) <br>
-7. [Conclusion](#7-conclusion) <br>
-8. [Reference](#8-reference) <br>
-9. [Citing](#9-citing) <br>
-10. [Member, Contribution and Responsibility](#10-member,-contribution-and-responsibility) <br>
-11. [End Credit](#11-end-credit) <br>
+4. [Result](#4-result) <br>
+5. [Discussion](#5-discussion) <br>
+6. [Conclusion](#6-conclusion) <br>
+7. [Reference](#7-reference) <br>
+8. [Citing](#8-citing) <br>
+9. [Members, Contribution and Responsibility](#9-members,-contribution-and-responsibility) <br>
+10. [End Credit](#10-end-credit) <br>
 
 ## 1. Introduction
 This project aims to build the best deep learning model that gives the highest accuracy for image classification task. We trained 3 different pre-trained models including VGG16, NASNetMobile, and DenseNet121 on a digitized painting dataset to compare their art classification performances between the original pre-trained models and fine-tuned models. 
@@ -93,34 +92,35 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 3.3 DenseNet121
+We utilized ImageNet as the pre-trained weights on model, Adam as optimizer, categorical crossentropy as loss function for multi-class classification task, and 224 x 224 as input size.
 ### 3.3.1 Epoch
-![Imgur](https://i.imgur.com/xGab4E9.png)
+![Imgur](https://i.imgur.com/xGab4E9.png) <br>
+We trained data on 200 epochs to find an appropriate number of epoch. We found that train loss does not overfit and gradually decreases. Otherwise, in the accuracy graph around the 150th epoch, the accuracy of the validation set is less than the training data set. As a result, we decided to train the model for 150 epochs with a batch size of 32.
 ### 3.3.2 Fine-tuning pre-trained DenseNet121 model
 ![Imgur](https://i.imgur.com/ynlWDPk.png)
+We fine-tuned the DenseNet121 pre-trained model by adding dense layers and dropout layers, as shown in figure, with a batch size of 32 and 150 epochs. We found that
+- Model 1 gave the best accuracy at 83.54%, meanwhile Model 3 given the best loss at 0.6226 on testing set
+- The dropout 0.2 in Model 1 is too little and causes overfit, but it gives the best accuracy among the 4 models. Meanwhile, the dropout rate in model 2 is 0.5. It does not overfit, but the accuracy is not better than the original base model.
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 4. Prediction
 
-
-[![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
-
-
-## 5. Result
-### 5.1 Batch size 
+## 4. Result
+### 4.1 Batch size 
 ![Imgur](https://i.imgur.com/QBhOWz5.png)
-### 5.2 Model1: VGG16
+### 4.2 Model1: VGG16
 ![Imgur](https://i.imgur.com/nWTW8mn.png)
-### 5.3 Model2: NASNetMobile
+### 4.3 Model2: NASNetMobile
 ![Imgur](https://i.imgur.com/KfXiwp1.png)
-### 5.4 Model3: DenseNet121
+### 4.4 Model3: DenseNet121
 ![Imgur](https://i.imgur.com/KdDIBpd.png)
-### 5.5 Compare the best performance of each model
+### 4.5 Compare the best performance of each model
 ![Imgur](https://i.imgur.com/Xe6Jap7.png)
+### 4.6 Inference on the best accuracy of fine-tuning the layers of DenseNet121(model1)
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 6. Discussion
+## 5. Discussion
 
 ![Imgur](https://i.imgur.com/5XGwrZA.png)
 
@@ -132,7 +132,7 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 7. Conclusion
+## 6. Conclusion
 In this project aims to build the best CNN model with pre-trained models that gives the highest accuracy for multi-class image classification of 5 types of painting. We experiment with original (ImageNet) and pre-trained models including VGG16, NASNetMobile, and DenseNet121 and compare the results between the original pre-trained and models after fine-tuning. 
 
 Experimental results show that  
@@ -143,11 +143,11 @@ Experimental results show that
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 8. Reference
+## 7. Reference
 Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9SUWL8Vyt67vVnleLwDnme6V?usp=sharing <br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 9. Citing
+## 8. Citing
 ```  
     @inproceedings{plummerCITE2018, 
 	Author = {Nidchapan N., Prapatsorn T., Chotika B., Juthamas P., Naliya M.}, 
@@ -158,12 +158,12 @@ Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9S
 ```  
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 10. Member, Contribution and Responsibility
+## 9. Member, Contribution and Responsibility
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 11. End Credit
+## 10. End Credit
 This project is a part of subject DADS7202. Data Analytics and Data Science. NIDA
 
 
