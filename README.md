@@ -4,7 +4,7 @@
 ## 🌟 Highlight
 -   All fine-tuning pre-trained CNN models are better than the original pre-trained models which trained on the ImageNet dataset.
 -   The best model which gives the highest accuracy of test set for this project is the fine-tuning DenseNet121 pre-tained model (DenseNet121-Model 1).
--   Adding layers improves performance which increases accuracy and reduces loss of test set
+-   Adding layers improves performance which increases accuracy and reduces loss of test set.
 -   However, adding too many layers leads to overfitting, which performs well on training data but not on unseen data.
 
 ## Table of Contents
@@ -74,7 +74,7 @@ Before fine-tuning the layers of pre-trained model, we attempt to optimize varia
 we experiment with batch sizes of `16`, `32`, and `64` to find out which batch size results in the `highest accuracy` and `lowest loss` for test set at epoch 25, original pre-trained model. <br>
 ![Imgur](https://i.imgur.com/vhmiuNt.png)
 ![Imgur](https://i.imgur.com/RtNbLsn.png)
-- the results of batch sizes of 16, 32, and 64 trends are nearly equal in terms of validation accuracy and loss. At final epoch, the greatest batch size is 32, which gives the highest validation accuracy and lowest validation loss
+- the results of batch sizes of 16, 32, and 64 trends are nearly equal in terms of validation accuracy and loss. At final epoch, the greatest batch size is 32, which gives the highest validation accuracy and lowest validation loss.
 - we utilized batch size of 32 as default value for this task.
 
 ### 3.1.2 Epoch
@@ -88,7 +88,7 @@ Overfitting occurs when a model performs well on training data but poorly on val
 ![Imgur](https://i.imgur.com/f5CClNA.png) <br>
 We attempted to fine-tune the VGG16 pre-trained model by adding dense layers and droupout layers, as shown in the figure, with a batch size of 32 and 90 epochs. We concluded that, <br>
 - Adding layers improved performance which increased accuracy and reduced loss on test set, in conclusion, fine-tuning model performed better than the original pre-trained model.
-- The best model is Model 3, accuracy from the test set is 80.73 ± 0.09% and loss from test set is 0.57 ± 0.02% <br>
+- The best model is Model 3, accuracy from the test set is 80.73 ± 0.09% and loss from test set is 0.57 ± 0.02%. <br>
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
@@ -112,7 +112,7 @@ Experimental results showed the NASNetMobile did not performed well and ended up
 We attempted to fine-tune the NASNetMobile pre-trained model by adding dense layers and dropout layers, as shown in figure, with a batch size of 32 and 90 epochs. We found that
 - As we find ways to improve model accuracy by increasing the number of hidden layers, we found that the accuracy depends on the complexity of the problem. Thus, the accuracy increased from Model 1 (accuracy from test sets 78.47 ± 1.30%) to Model 2 (accuracy from test sets 81.25 ± 2.25%) but decreased from Model 2 to Model 3 (accuracy from test sets 79.51 ± 1.96%). 
 - From Model 2 to Model 3, we increased 2 dense layers and a dropout layer but doing so lowered the accuracy on the test set. We suspected that the number of layers in model 2 is already sufficient. Too many layers can cause overfitting to the network. It performs best on the training data, but it won't be able to generalize to new unseen data.
-- The best model is Model 2, accuracy from test set is 81.25 ± 2.25% and loss from test set is 29.10 ± 3.80% <br>
+- The best model is Model 2, accuracy from test set is 81.25 ± 2.25% and loss from test set is 29.10 ± 3.80%. <br>
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
@@ -126,7 +126,7 @@ We trained data on 200 epochs to find an appropriate number of epoch. We found t
 ### 3.3.2 Fine-tuning pre-trained DenseNet121 model
 ![Imgur](https://i.imgur.com/YiDmIT5.png) <br>
 We fine-tuned the DenseNet121 pre-trained model by adding dense layers and dropout layers, as shown in figure, with a batch size of 32 and 150 epochs. We found that
-- Model 1 gave the best accuracy at 83.54%, meanwhile Model 3 given the best loss at 0.6226 on testing set
+- Model 1 gave the best accuracy at 83.54%, meanwhile Model 3 given the best loss at 0.6226 on testing set.
 - The dropout 0.2 in Model 1 is too little and causes overfit, but it gives the best accuracy among the 4 models on test set. Meanwhile, the dropout rate in model 2 is 0.5. It does not overfit, but the accuracy is not better than the original base model. 
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
@@ -146,21 +146,21 @@ We found that batch size 32 produced the most accurate and the least loss on tes
 ![Imgur](https://i.imgur.com/PReFdld.png) <br>
 Table 4.1 comparing performances of original pre-trained VGG16 and three fine-tuned VGG16 models
 
-As you can see from table 4.1, all three fine-tuned VGG16 models have more accuracy on the test dataset than the original pre-trained VGG16 model. `Model 3` is the most accurate of the VGG16 models, with an accuracy of 80.73 ± 0.01% on the test dataset, with batch size of 32 and 90 epochs, and the shortest mean time to train (8.49 ± 0.12 seconds on GPU). Moreover, Model 3 has the least loss from the test dataset (57.90 ± 0.02%)
+As you can see from table 4.1, all three fine-tuned VGG16 models have more accuracy on the test dataset than the original pre-trained VGG16 model. `Model 3` is the most accurate of the VGG16 models, with an accuracy of 80.73 ± 0.01% on the test dataset, with batch size of 32 and 90 epochs, and the shortest mean time to train (8.49 ± 0.12 seconds on GPU). Moreover, Model 3 has the least loss from the test dataset (57.90 ± 0.02%).
 
 #### 4.3 Model 2: NASNetMobile
 
 ![Imgur](https://i.imgur.com/GxBkEbW.png) <br>
 Table 4.2 comparing performances of original pre-trained NASNetMobile and three fine-tuned NASNetMobile models
 
-As you can see from table 4.2, all three fine-tuned NASNetMobile models produced more accuracy on the test dataset than the original pre-trained NASNetMobile model. `Model 2` is the most accurate model compared to all the NASNetMobile models, with an accuracy of 81.25% on the test dataset, with batch size of 32 and 90 epochs, and it takes the least time to train (12.79 ± 1.93 seconds on GPU). However, Model 1 has the least loss on the test dataset (26.98%)
+As you can see from table 4.2, all three fine-tuned NASNetMobile models produced more accuracy on the test dataset than the original pre-trained NASNetMobile model. `Model 2` is the most accurate model compared to all the NASNetMobile models, with an accuracy of 81.25% on the test dataset, with batch size of 32 and 90 epochs, and it takes the least time to train (12.79 ± 1.93 seconds on GPU). However, Model 1 has the least loss on the test dataset (26.98%).
 
 #### 4.4 Model 3: DenseNet121
 
 ![Imgur](https://i.imgur.com/TvFKAg4.png) <br> 
 Table 4.3 comparing performances of original pre-trained DenseNet121 and three fine-tuned DenseNet121 models
 
-As you can see from table 4.3, of the three fine-tuned DenseNet121 models, Model 2, has less accuracy on the test dataset than the original pre-trained DenseNet121 model (with accuracy of 73.13 ± 0.02%). **Model 1** is the most accurate model compared with all DenseNet121 models, with an accuracy of 83.54 ± 0.02% on the test dataset, with batch size of 32 and 150 epochs. However, model 3 has the least loss on the test dataset with 62.26 ± 0.06%
+As you can see from table 4.3, of the three fine-tuned DenseNet121 models, Model 2, has less accuracy on the test dataset than the original pre-trained DenseNet121 model (with accuracy of 73.13 ± 0.02%). **Model 1** is the most accurate model compared with all DenseNet121 models, with an accuracy of 83.54 ± 0.02% on the test dataset, with batch size of 32 and 150 epochs. However, model 3 has the least loss on the test dataset with 62.26 ± 0.06%.
 
 #### 4.5 Compare the best performance of each model
 
