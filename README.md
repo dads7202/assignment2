@@ -120,9 +120,14 @@ We attempted to fine-tune the NASNetMobile pre-trained model by adding dense lay
 We utilized ImageNet as the pre-trained weights on model, Adam as optimizer, categorical crossentropy as loss function for multi-class classification task, and 224 x 224 as input size. <br>
 
 ### 3.3.1 Epoch
+![Imgur](https://i.imgur.com/a8qX4rq.png) <br>
+We trained data on 200 epochs to find an appropriate number of epoch. We found that train loss does not overfit and gradually decreases. Otherwise, in the accuracy graph around the 150th epoch, the accuracy of the validation set is less than the training data set. As a result, we decided to train the model for 150 epochs with a batch size of 32.
 
-
-
+### 3.3.2 Fine-tuning pre-trained DenseNet121 model
+![Imgur](https://i.imgur.com/YiDmIT5.png) <br>
+We fine-tuned the DenseNet121 pre-trained model by adding dense layers and dropout layers, as shown in figure, with a batch size of 32 and 150 epochs. We found that
+- Model 1 gave the best accuracy at 83.54%, meanwhile Model 3 given the best loss at 0.6226 on testing set
+- The dropout 0.2 in Model 1 is too little and causes overfit, but it gives the best accuracy among the 4 models. Meanwhile, the dropout rate in model 2 is 0.5. It does not overfit, but the accuracy is not better than the original base model.
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
@@ -134,6 +139,44 @@ We utilized ImageNet as the pre-trained weights on model, Adam as optimizer, cat
 
 
 ## 5. Result
+
+#### 5.1 Batch size
+Firstly, we set the hypothesis that on this dataset if we increase batch size, the accuracy should be improved. Then we examined batch sizes of 16, 32, and 64 respectively to establish which batch size produces the highest accuracy and lowest loss for the test set at epoch 25 and the original pre-trained model.
+
+![Imgur](https://i.imgur.com/mUk3k3Q.png) <br>
+
+We found that batch size 32 produced the most accurate and the least loss on test dataset. So that we decided to set the batch size to 32 as the default value for this task.
+
+#### 5.2 Model 1: VGG16
+
+![Imgur](https://i.imgur.com/PReFdld.png) <br>
+Table 4.1 comparing performances of original pre-trained VGG16 and three fine-tuned VGG16 models
+
+As you can see from table 4.1, all three fine-tuned VGG16 models have more accuracy on the test dataset than the original pre-trained VGG16 model. `Model 3` is the most accurate of the VGG16 models, with an accuracy of 80.73 ± 0.01% on the test dataset, with batch size of 32 and 90 epochs, and the shortest mean time to train (8.49 ± 0.12 seconds on GPU). Moreover, Model 3 has the least loss from the test dataset (57.90 ± 0.02%)
+
+#### 5.3 Model 2: NASNetMobile
+
+![Imgur](https://i.imgur.com/GxBkEbW.png) <br>
+Table 4.2 comparing performances of original pre-trained NASNetMobile and three fine-tuned NASNetMobile models
+
+As you can see from table 4.2, all three fine-tuned NASNetMobile models produced more accuracy on the test dataset than the original pre-trained NASNetMobile model. `Model 2` is the most accurate model compared to all the NASNetMobile models, with an accuracy of 81.25% on the test dataset, with batch size of 32 and 90 epochs, and it takes the least time to train (12.79 ± 1.93 seconds on GPU). However, Model 1 has the least loss on the test dataset (26.98%)
+
+#### 5.4 Model 3: DenseNet121
+
+![Imgur](https://i.imgur.com/TvFKAg4.png) <br> 
+Table 4.3 comparing performances of original pre-trained DenseNet121 and three fine-tuned DenseNet121 models
+
+As you can see from table 4.3, of the three fine-tuned DenseNet121 models, Model 2, has less accuracy on the test dataset than the original pre-trained DenseNet121 model (with accuracy of 73.13 ± 0.02%). **Model 1** is the most accurate model compared with all DenseNet121 models, with an accuracy of 83.54 ± 0.02% on the test dataset, with batch size of 32 and 150 epochs. However, model 3 has the least loss on the test dataset with 62.26 ± 0.06%
+
+#### 5.5 Compare the best performance of each model
+
+![Imgur](https://i.imgur.com/qr5UtbF.png) <br>
+Table 4.4 comparing performance of each best fine-tuned model
+
+Comparing all the results from the best-performed model of each backbone, we found that,
+1. VGG16 took the least mean time for each epoch in the training model, with a mean time of 8.49 ± 0.11 seconds per epoch.
+2. NASNetMobile has the lowest loss accuracy on the test dataset, with a loss accuracy of 0.29 ± 0.03% on the test dataset.
+3. DenseNet121 is the most accurate model, with an accuracy of 83.54 ± 0.02% on the test dataset.
 
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
