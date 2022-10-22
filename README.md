@@ -7,9 +7,9 @@
 1. [Introduction](#1-introduction) <br>
 2. [Data Preparation](#2-data-preparation) <br>
 3. [Model](#3-model)<br>
-   - [3.1 VGG16](#3-1-vgg16)<br>
-   - [3.2 NASNetMobile](#3-2-nasnetmobile) <br>
-   - [3.3 DenseNet121](#3-3-densenet121) <br>
+   - [3.1 VGG16](#31-vgg16)<br>
+   - [3.2 NASNetMobile](#32-nasnetmobile) <br>
+   - [3.3 DenseNet121](#33-densenet121) <br>
 4. [Prediction](#4-prediction) <br>
 5. [Result](#5-result) <br>
 6. [Discussion](#6-discussion) <br>
@@ -19,7 +19,7 @@
 10. [Member, Contribution and Responsibility](#10-member,-contribution-and-responsibility) <br>
 11. [End Credit](#11-end-credit) <br>
 
-## 1 Introduction
+## 1. Introduction
 This project aims to build the best model that gives the highest accuracy for this task by training models that can predict the 5 "genres" or "categories" of paintings. We experiment with pre-trained models including VGG16, NASNetMobile, and DenseNet121 and compare the results between the original pre-trained and the model after fine-tuning. The five categories of fine art painting are as follows:  
 - History Painting 
 - Portrait Art 
