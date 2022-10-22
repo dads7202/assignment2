@@ -36,7 +36,7 @@ Hierarchy of Painting Genre, the concept of categorizing Western paintings into 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 2. Data Preparation
-
+GPU Name: We use NVIDIA TESLA P100 as GPU for this project.
 **Data source:** Our dataset consists of paintings downloaded from publicly available sources such as [WikiArt](https://www.wikiart.org/), [The Met](https://www.metmuseum.org/), [My Art Magazine](https://myartmagazine.com/), [Colossal](https://www.thisiscolossal.com/). For more information about the dataset, please refer to [the excel](https://github.com/dads7202/assignment2/blob/main/fileReference/Reference.xlsx).
 **Columns description** <br>
 - Type: type of paintings such as genre, stillife, portrait, landscape and history <br>
