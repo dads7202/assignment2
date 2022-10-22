@@ -72,20 +72,18 @@ We use pre-trained models which trained on `ImageNet` dataset, Adam as optimizer
 Before fine-tuning the layers of pre-trained model, we attempt to optimize variables such as batch size, and epoch for original pre-trained vgg16 model. 
 ### 3.1.1 Batch Size
 we experiment with batch sizes of `16`, `32`, and `64` to find out which batch size results in the `highest accuracy` and `lowest loss` for test set at epoch 25, original pre-trained model. <br>
-![Imgur](https://i.imgur.com/vhmiuNt.png)
-![Imgur](https://i.imgur.com/RtNbLsn.png)
+![Imgur](https://i.imgur.com/YEtt4Fj.png) <br>
 - the results of batch sizes of 16, 32, and 64 trends are nearly equal in terms of validation accuracy and loss. At final epoch, the greatest batch size is 32, which gives the highest validation accuracy and lowest validation loss.
 - we utilized batch size of 32 as default value for this task.
 
 ### 3.1.2 Epoch
 Overfitting occurs when a model performs well on training data but poorly on validation or unknown data. To avoid overfitting, we experimented with 200 epochs to observe the trend of curve loss at batch sizes of 32, original pre-trained model.
-![Imgur](https://i.imgur.com/hgeZIDr.png)
-![Imgur](https://i.imgur.com/CIP04V1.png) <br>
+![Imgur](https://i.imgur.com/fYARtwO.png) <br>
 - From the graphs presented, validation loss begins to exceed training loss indicating that overfitting occurs when the epoch exceeds 100. The ultimate epoch for getting the highest accuracy and the lowest validation loss for the original pre-trained model is 90.
 - We chose the epoch of 90 to compare the results of the original pre-trained model and the fine-tuned models
 
 ### 3.1.3 Fine-tuning pre-trained VGG16 model
-![Imgur](https://i.imgur.com/f5CClNA.png) <br>
+![Imgur](https://i.imgur.com/d43Rcus.png) <br>
 We attempted to fine-tune the VGG16 pre-trained model by adding dense layers and droupout layers, as shown in the figure, with a batch size of 32 and 90 epochs. We concluded that, <br>
 - Adding layers improved performance which increased accuracy and reduced loss on test set, in conclusion, fine-tuning model performed better than the original pre-trained model.
 - The best model is Model 3, accuracy from the test set is 80.73 ± 0.09% and loss from test set is 0.57 ± 0.02%. <br>
@@ -120,7 +118,7 @@ We attempted to fine-tune the NASNetMobile pre-trained model by adding dense lay
 We utilized ImageNet as the pre-trained weights on model, Adam as optimizer, categorical crossentropy as loss function for multi-class classification task, and 224 x 224 as input size. <br>
 
 ### 3.3.1 Epoch
-![Imgur](https://i.imgur.com/a8qX4rq.png) <br>
+![Imgur](https://i.imgur.com/NXvokFy.png) <br>
 We trained data on 200 epochs to find an appropriate number of epoch. We found that train loss does not overfit and gradually decreases. Otherwise, in the accuracy graph around the 150th epoch, the accuracy of the validation set is less than the training data set. As a result, we decided to train the model for 150 epochs with a batch size of 32.
 
 ### 3.3.2 Fine-tuning pre-trained DenseNet121 model
