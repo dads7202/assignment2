@@ -19,7 +19,7 @@
 6. [Conclusion](#6-conclusion) <br>
 7. [Reference](#7-reference) <br>
 8. [Citing](#8-citing) <br>
-9. [Members, Contribution and Responsibility](#9-members,-contribution-and-responsibility) <br>
+9. [Members, Contribution and Responsibility](#9-members-contribution-and-responsibility) <br>
 10. [End Credit](#10-end-credit) <br>
 
 ## 1. Introduction
