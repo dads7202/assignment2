@@ -173,8 +173,8 @@ Comparing all the results from the best-performed model of each backbone, we fou
 3. DenseNet121 is the most accurate model, with an accuracy of 83.54 ± 0.02% on the test dataset.
 
 #### 4.6 Inference on the best accuracy of fine-tuning the layers of DenseNet121(model1).
-![Imgur](https://i.imgur.com/hVI59WM.png)
-Figure shows the prediction on testing set using DenseNet121 ( model 3 ).
+![Imgur](https://i.imgur.com/hVI59WM.png) <br>
+Figure shows the prediction on testing set using DenseNet121 ( model 3 ). <br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
