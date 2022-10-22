@@ -22,7 +22,7 @@
 9. [Member, Contribution and Responsibility](#9-member,-contribution-and-responsibility) <br>
 10. [End Credit](#10-end-credit) <br>
 
-## 💬 1. Introduction
+## 1. Introduction
 This project aims to build the best deep learning model that gives the highest accuracy for image classification task. We trained 3 different pre-trained models including VGG16, NASNetMobile, and DenseNet121 on a digitized painting dataset to compare their art classification performances between the original pre-trained models and fine-tuned models. 
 `Our datasets do not exist on ImageNet dataset`
 
