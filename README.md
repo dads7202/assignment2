@@ -60,11 +60,21 @@ To get data ready for model: <br>
 We use `ImageNet` as the pre-trained weights on model, `Adam` as optimizer, categorical `crossentropy` as loss function for multi-class classification task, and `224 x 224` as input size. 
 ## 3.1 VGG16
 Before fine-tuning the layers of pre-trained model, we attempt to optimize variables such as batch size, and epoch for original pre-trained vgg16 model. 
-###3.1.1 Batch Size
+### 3.1.1 Batch Size
 we experiment with batch sizes of `16`, `32`, and `64` to find out which batch size results in the `highest accuracy` and `lowest loss` for test set at epoch 25, original pre-trained model. 
+![Imgur](https://i.imgur.com/vhmiuNt.png)
+![Imgur](https://i.imgur.com/RtNbLsn.png)
+### 3.1.2 Epoch
+![Imgur](https://i.imgur.com/hgeZIDr.png)
+![Imgur](https://i.imgur.com/CIP04V1.png)
+### 3.1.3 Fine-tuning pre-trained VGG16 model
+![Imgur](https://i.imgur.com/f5CClNA.png)
 
 
 ## 3.2 NASNetMobile
+### 3.2.1 Batch size
+
+
 
 ## 3.3 DenseNet16
 
