@@ -73,21 +73,46 @@ Before fine-tuning the layers of pre-trained model, we attempt to optimize varia
 we experiment with batch sizes of `16`, `32`, and `64` to find out which batch size results in the `highest accuracy` and `lowest loss` for test set at epoch 25, original pre-trained model. <br>
 ![Imgur](https://i.imgur.com/vhmiuNt.png)
 ![Imgur](https://i.imgur.com/RtNbLsn.png)
+- the results of batch sizes of 16, 32, and 64 trends are nearly equal in terms of validation accuracy and loss. At final epoch, the greatest batch size is 32, which gives the highest validation accuracy and lowest validation loss
+- we utilized batch size of 32 as default value for this task
+
 ### 3.1.2 Epoch
+Overfitting occurs when a model performs well on training data but poorly on validation or unknown data. To avoid overfitting, we experimented with 200 epochs to observe the trend of curve loss at batch sizes of 32, original pre-trained model.
 ![Imgur](https://i.imgur.com/hgeZIDr.png)
 ![Imgur](https://i.imgur.com/CIP04V1.png)
+- From the graphs presented, validation loss begins to exceed training loss indicating that overfitting occurs when the epoch exceeds 100. The ultimate epoch for getting the highest accuracy and the lowest validation loss for the original pre-trained model is 90.
+- We chose the epoch of 90 to compare the results of the original pre-trained model and the fine-tuned models
+
 ### 3.1.3 Fine-tuning pre-trained VGG16 model
 ![Imgur](https://i.imgur.com/f5CClNA.png)
+We attempted to fine-tune the VGG16 pre-trained model by adding dense layers and droupout layers, as shown in the figure, with a batch size of 32 and 90 epochs. We concluded that
+- Adding layers improved performance which increased accuracy and reduced loss on test set, in conclusion, fine-tuning model performed better than the original pre-trained model.
+- The best model is Model 3, accuracy from the test set is 80.73 ± 0.09% and loss from test set is 0.57 ± 0.02%
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 3.2 NASNetMobile
+We used ImageNet as the pre-trained weights on model Hyperparameter that use base mode by the Imagenet
+- input_shape: [None, 224, 224, 3]
+- weights: [imagenet]
+- Activation function in Output layer: [softmax]
+- Loss function: [binary_crossentropy]
+- Optimizer: [Adam]
+- Batch: [32]
+- Epoch: [200]
+
 ### 3.2.1 Batch size
-![Imgur](https://i.imgur.com/tAFO8Vo.png)
+We experimented with original model (ImageNet) by validate epoch between 0 and 200. <br>
+![Imgur](https://i.imgur.com/tAFO8Vo.png) <br>
+Experimental results showed the NASNetMobile did not performed well and ended up overfitting after only approximately 7 epochs. We supposed NASNetMobile probably isn't suitable for this dataset. First, we selected 90 epochs before attempting to fine-tune the model because it's a steady state of accuracy as shown in the graphs. The accuracy was not different between 90 and 200 epochs. Next, we attempted to find the best conditions for this model.
+
 ### 3.2.2 Fine-tuning pre-trained NASNetMobile model
 ![Imgur](https://i.imgur.com/O0TSWyY.png)
-
+We attempted to fine-tune the NASNetMobile pre-trained model by adding dense layers and dropout layers, as shown in figure, with a batch size of 32 and 90 epochs. We found that
+- As we find ways to improve model accuracy by increasing the number of hidden layers, we found that the accuracy depends on the complexity of the problem. Thus, the accuracy increased from Model 1 (accuracy from test sets 78.47 ± 1.30%) to Model 2 (accuracy from test sets 81.25 ± 2.25%) but decreased from Model 2 to Model 3 (accuracy from test sets 79.51 ± 1.96%). 
+- From Model 2 to Model 3, we increased 2 dense layers and a dropout layer but doing so lowered the accuracy on the test set. We suspected that the number of layers in model 2 is already sufficient. Too many layers can cause overfitting to the network. It performs best on the training data, but it won't be able to generalize to new unseen data.
+- The best model is Model 2, accuracy from test set is 81.25 ± 2.25% and loss from test set is 29.10 ± 3.80%
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
