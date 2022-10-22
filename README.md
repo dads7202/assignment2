@@ -136,6 +136,12 @@ We attempted to fine-tune the NASNetMobile pre-trained model by adding dense lay
 
 
 ## 6. Discussion
+<p> We chose VGG16 as our first pre-trained model since, from previous published works, it tends to perform well on general image classifications problems. We experimented with 16, 32 and 64 batch size and found that batch size 32 gave the highest validation accuracy with lowest validation loss. We then utilized this number of batch size as default throughout the experimentation. </p>
+![Imgur](https://i.imgur.com/vhmiuNt.png)
+![Imgur](https://i.imgur.com/RtNbLsn.png)
+<p> This finding aligned with what has been observed in practice that large-batch methods tend to converge to sharp minimizers of the training and testing functions and leads to poorer generalization. <br>
+We hand-picked 3 pre-trained models that performed best in the preliminary testing: VGG16, NASNetMobile, and DenseNet121 with 4 other pre-trained models being Xception, ResNET50, NASNetLarge, and EfficientNet. Then we compared performances of the original 3 models with 3 other fine-tuned models each. Fine-tuning was done by (1) adjusting epochs and (2) adding layers to the models. </p>
+
 
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
