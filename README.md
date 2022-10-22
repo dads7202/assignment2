@@ -3,7 +3,7 @@
 
 ## 🌟 Highlight
 -   All fine-tuning pre-trained CNN models are better than the original pre-trained models which trained on the ImageNet dataset.
--   The best model which gives the highest accuracy of test set for this project is the fine-tuning Densenet pre-tained model (Densenet-Model 1).
+-   The best model which gives the highest accuracy of test set for this project is the fine-tuning DenseNet121 pre-tained model (DenseNet121-Model 1).
 -   Adding layers improves performance which increases accuracy and reduces loss of test set
 -   However, adding too many layers leads to overfitting, which performs well on training data but not on unseen data.
 
