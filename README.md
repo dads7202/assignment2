@@ -14,14 +14,13 @@
    - [3.1 VGG16](#31-vgg16)<br>
    - [3.2 NASNetMobile](#32-nasnetmobile) <br>
    - [3.3 DenseNet121](#33-densenet121) <br>
-4. [Prediction](#4-prediction) <br>
-5. [Result](#5-result) <br>
-6. [Discussion](#6-discussion) <br>
-7. [Conclusion](#7-conclusion) <br>
-8. [Reference](#8-reference) <br>
-9. [Citing](#9-citing) <br>
-10. [Member, Contribution and Responsibility](#10-member,-contribution-and-responsibility) <br>
-11. [End Credit](#11-end-credit) <br>
+4. [Result](#4-result) <br>
+5. [Discussion](#5-discussion) <br>
+6. [Conclusion](#6-conclusion) <br>
+7. [Reference](#7-reference) <br>
+8. [Citing](#8-citing) <br>
+9. [Member, Contribution and Responsibility](#9-member,-contribution-and-responsibility) <br>
+10. [End Credit](#10-end-credit) <br>
 
 ## 💬 1. Introduction
 This project aims to build the best deep learning model that gives the highest accuracy for image classification task. We trained 3 different pre-trained models including VGG16, NASNetMobile, and DenseNet121 on a digitized painting dataset to compare their art classification performances between the original pre-trained models and fine-tuned models. 
@@ -39,7 +38,7 @@ Hierarchy of Painting Genre, the concept of categorizing Western paintings into 
 ## 2. Data Preparation
 
 **Data source:** Our dataset consists of paintings downloaded from publicly available sources such as [WikiArt](https://www.wikiart.org/), [The Met](https://www.metmuseum.org/), [My Art Magazine](https://myartmagazine.com/), [Colossal](https://www.thisiscolossal.com/). For more information about the dataset, please refer to [the excel](https://github.com/dads7202/assignment2/blob/main/fileReference/Reference.xlsx).
-**Column in this excel** <br>
+**Columns description** <br>
 - Type: type of paintings such as genre, stillife, portrait, landscape and history <br>
 - image_name: type of painting_index.type file such as genre_001.jpg <br>
 - url: the reference in each image. <br>
@@ -94,11 +93,11 @@ We attempted to fine-tune the VGG16 pre-trained model by adding dense layers and
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 3.2 NASNetMobile
-We used ImageNet as the pre-trained weights on model Hyperparameter that use base mode by the Imagenet
+We used ImageNet as the pre-trained weights on model and there are the hyperparameters listed below.
 - input_shape: [None, 224, 224, 3]
 - weights: [imagenet]
 - Activation function in Output layer: [softmax]
-- Loss function: [binary_crossentropy]
+- Loss function: [categorical_crossentropy]
 - Optimizer: [Adam]
 - Batch: [32]
 - Epoch: [200]
@@ -106,7 +105,7 @@ We used ImageNet as the pre-trained weights on model Hyperparameter that use bas
 ### 3.2.1 Batch size
 We experimented with original model (ImageNet) by validate epoch between 0 and 200. <br>
 ![Imgur](https://i.imgur.com/tAFO8Vo.png)
-Experimental results showed the NASNetMobile did not performed well and ended up overfitting after only approximately 7 epochs. We supposed NASNetMobile probably isn't suitable for this dataset. First, we selected 90 epochs before attempting to fine-tune the model because it's a steady state of accuracy as shown in the graphs. The accuracy was not different between 90 and 200 epochs. Next, we attempted to find the best conditions for this model.
+Experimental results showed the NASNetMobile did not performed well and ended up overfitting after only approximately 7 epochs. We supposed that which this epoch NASNetMobile probably isn't suitable for unseen data (perform well on training set but not on unseen data) that lead to overfits. First, we selected 90 epochs before attempting to fine-tune the model because it's a steady state of accuracy as shown in the graphs. The accuracy was not different between 90 and 200 epochs. Next, we attempted to find the best conditions for this model. 
 
 ### 3.2.2 Fine-tuning pre-trained NASNetMobile model
 ![Imgur](https://i.imgur.com/O0TSWyY.png) <br> 
@@ -128,7 +127,7 @@ We trained data on 200 epochs to find an appropriate number of epoch. We found t
 ![Imgur](https://i.imgur.com/YiDmIT5.png) <br>
 We fine-tuned the DenseNet121 pre-trained model by adding dense layers and dropout layers, as shown in figure, with a batch size of 32 and 150 epochs. We found that
 - Model 1 gave the best accuracy at 83.54%, meanwhile Model 3 given the best loss at 0.6226 on testing set
-- The dropout 0.2 in Model 1 is too little and causes overfit, but it gives the best accuracy among the 4 models. Meanwhile, the dropout rate in model 2 is 0.5. It does not overfit, but the accuracy is not better than the original base model.
+- The dropout 0.2 in Model 1 is too little and causes overfit, but it gives the best accuracy among the 4 models on test set. Meanwhile, the dropout rate in model 2 is 0.5. It does not overfit, but the accuracy is not better than the original base model. 
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
@@ -237,8 +236,8 @@ Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9S
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 9. Member, Contribution and Responsibility
-1. 6310412022 (20%) Prepare dataset , review & VGG16 and result 
-2. 6410422007 (20%) Prepare dataset , review & data collection and result 
+1. 6310412022 (20%) Prepare dataset, review & VGG16 and result 
+2. 6410422007 (20%) Prepare dataset, review & data collection and result 
 3. 6410422016 (20%) Prepare dataset, review & NASNetMobile, conclusion 
 4. 6410422022 (20%) Prepare dataset, review & DenseNet121 and result 
 5. 6410422030 (20%) Prepare dataset, review & introduction and discussion 
