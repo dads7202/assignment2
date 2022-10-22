@@ -199,7 +199,7 @@ VGG16 and DenseNet121 showed signs of overfitting at 100th and 150th epoch respe
 #### The effect of hidden layers on the model performance.
 <p> In all 3 models we used Rectified Linear Unit (ReLU) activation function in the dense layers because it is well-studied that ReLU outperformed other activation functions, such as Sigmoid and Hyperbolic tangent. </p>
 
-![Imgur](https://i.imgur.com/QqCVB0z.png) <br>
+![Imgur](https://i.imgur.com/fgGe0Ow.png)
 
 <p> The best performers of each model have 3-5 dense layers. We observed that the more dense layer added to the model, the less ability of the model to generalized. <br>
 Adding dropout layers and increasing dropout rates to the model help with overfitting issue as best observed in NASNetMobile Model 2. <br>
