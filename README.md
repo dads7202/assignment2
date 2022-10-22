@@ -67,7 +67,8 @@ To get data ready for model: <br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 3. Model
-We use `ImageNet` as the pre-trained weights on model, `Adam` as optimizer, categorical `crossentropy` as loss function for multi-class classification task, and `224 x 224` as input size. 
+We use pre-trained models which trained on `ImageNet` dataset, Adam as optimizer, `categorical crossentropy` as loss function for multi-class classification task, and `224 x 224` as input size. 
+
 ### 3.1 VGG16
 Before fine-tuning the layers of pre-trained model, we attempt to optimize variables such as batch size, and epoch for original pre-trained vgg16 model. 
 ### 3.1.1 Batch Size
