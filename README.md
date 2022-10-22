@@ -91,7 +91,6 @@ We attempted to fine-tune the VGG16 pre-trained model by adding dense layers and
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-
 ## 3.2 NASNetMobile
 We used ImageNet as the pre-trained weights on model Hyperparameter that use base mode by the Imagenet
 - input_shape: [None, 224, 224, 3]
@@ -132,43 +131,37 @@ We fine-tuned the DenseNet121 pre-trained model by adding dense layers and dropo
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 4. Prediction
+## 4. Result
 
-
-[![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
-
-
-## 5. Result
-
-#### 5.1 Batch size
+#### 4.1 Batch size
 Firstly, we set the hypothesis that on this dataset if we increase batch size, the accuracy should be improved. Then we examined batch sizes of 16, 32, and 64 respectively to establish which batch size produces the highest accuracy and lowest loss for the test set at epoch 25 and the original pre-trained model.
 
 ![Imgur](https://i.imgur.com/mUk3k3Q.png) <br>
 
 We found that batch size 32 produced the most accurate and the least loss on test dataset. So that we decided to set the batch size to 32 as the default value for this task.
 
-#### 5.2 Model 1: VGG16
+#### 4.2 Model 1: VGG16
 
 ![Imgur](https://i.imgur.com/PReFdld.png) <br>
 Table 4.1 comparing performances of original pre-trained VGG16 and three fine-tuned VGG16 models
 
 As you can see from table 4.1, all three fine-tuned VGG16 models have more accuracy on the test dataset than the original pre-trained VGG16 model. `Model 3` is the most accurate of the VGG16 models, with an accuracy of 80.73 ± 0.01% on the test dataset, with batch size of 32 and 90 epochs, and the shortest mean time to train (8.49 ± 0.12 seconds on GPU). Moreover, Model 3 has the least loss from the test dataset (57.90 ± 0.02%)
 
-#### 5.3 Model 2: NASNetMobile
+#### 4.3 Model 2: NASNetMobile
 
 ![Imgur](https://i.imgur.com/GxBkEbW.png) <br>
 Table 4.2 comparing performances of original pre-trained NASNetMobile and three fine-tuned NASNetMobile models
 
 As you can see from table 4.2, all three fine-tuned NASNetMobile models produced more accuracy on the test dataset than the original pre-trained NASNetMobile model. `Model 2` is the most accurate model compared to all the NASNetMobile models, with an accuracy of 81.25% on the test dataset, with batch size of 32 and 90 epochs, and it takes the least time to train (12.79 ± 1.93 seconds on GPU). However, Model 1 has the least loss on the test dataset (26.98%)
 
-#### 5.4 Model 3: DenseNet121
+#### 4.4 Model 3: DenseNet121
 
 ![Imgur](https://i.imgur.com/TvFKAg4.png) <br> 
 Table 4.3 comparing performances of original pre-trained DenseNet121 and three fine-tuned DenseNet121 models
 
 As you can see from table 4.3, of the three fine-tuned DenseNet121 models, Model 2, has less accuracy on the test dataset than the original pre-trained DenseNet121 model (with accuracy of 73.13 ± 0.02%). **Model 1** is the most accurate model compared with all DenseNet121 models, with an accuracy of 83.54 ± 0.02% on the test dataset, with batch size of 32 and 150 epochs. However, model 3 has the least loss on the test dataset with 62.26 ± 0.06%
 
-#### 5.5 Compare the best performance of each model
+#### 4.5 Compare the best performance of each model
 
 ![Imgur](https://i.imgur.com/qr5UtbF.png) <br>
 Table 4.4 comparing performance of each best fine-tuned model
@@ -182,7 +175,7 @@ Comparing all the results from the best-performed model of each backbone, we fou
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 6. Discussion
+## 5. Discussion
 <p> We chose VGG16 as our first pre-trained model since, from previous published works, it tends to perform well on general image classifications problems. We experimented with 16, 32 and 64 batch size and found that batch size 32 gave the highest validation accuracy with lowest validation loss. We then utilized this number of batch size as default throughout the experimentation. </p>
 
 ![Imgur](https://i.imgur.com/vhmiuNt.png)
@@ -213,7 +206,7 @@ The results after fine-tuning compared to the original pretrained models, corres
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 7. Conclusion
+## 6. Conclusion
 In this project aims to build the best CNN model with pre-trained models that gives the highest accuracy for multi-class image classification of 5 types of painting. We experiment with original (ImageNet) and pre-trained models including VGG16, NASNetMobile, and DenseNet121 and compare the results between the original pre-trained and models after fine-tuning. 
 
 Experimental results show that  
@@ -224,11 +217,11 @@ Experimental results show that
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 8. Reference
+## 7. Reference
 Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9SUWL8Vyt67vVnleLwDnme6V?usp=sharing <br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 9. Citing
+## 8. Citing
 ```  
     @inproceedings{plummerCITE2018, 
 	Author = {Nidchapan N., Prapatsorn T., Chotika B., Juthamas P., Naliya M.}, 
@@ -239,12 +232,10 @@ Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9S
 ```  
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 10. Member, Contribution and Responsibility
+## 9. Member, Contribution and Responsibility
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
-## 11. End Credit
+## 10. End Credit
 This project is a part of subject DADS7202. Data Analytics and Data Science. NIDA
-
-
