@@ -211,7 +211,7 @@ The results after fine-tuning compared to the original pretrained models, corres
 In this project aims to build the best CNN model with pre-trained models that gives the highest accuracy for multi-class image classification of 5 types of painting. We experiment with original (ImageNet) and pre-trained models including VGG16, NASNetMobile, and DenseNet121 and compare the results between the original pre-trained and models after fine-tuning. 
 
 Experimental results show that  
-- The performance models of all fine-tuning CNN are better than original pre-trained models which trained on the imageNet dataset (Our datasets doesn't exist on ImageNet dataset).
+- The performance models of almost fine-tuning CNN are better than original pre-trained models which trained on the imageNet dataset (Our datasets doesn't exist on ImageNet dataset).
 - The performance models of fine-tuning CNN might improve the accuracy or might not, it really depends on the complexity of the problem. 
 - The model with the most accuracy on test dataset is DenseNet121 (model 1 the fine-tuning CNN). <br>
  
