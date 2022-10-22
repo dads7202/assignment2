@@ -26,6 +26,7 @@ This project aims to build the best model that gives the highest accuracy for th
 - Genre Painting 
 - Landscape Painting 
 - Still Life Painting 
+[![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 2. Data Preparation
 
