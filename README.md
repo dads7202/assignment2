@@ -27,7 +27,7 @@ This project aims to build the best model that gives the highest accuracy for th
 - Landscape Painting 
 - Still Life Painting 
 
-## 2 Data Preparation
+## 2. Data Preparation
 
 **Data source:** Our dataset consists of paintings downloaded from publicly available sources such as [WikiArt](https://www.wikiart.org/), [The Met](https://www.metmuseum.org/), [My Art Magazine](https://myartmagazine.com/), [Colossal](https://www.thisiscolossal.com/). For more information about the dataset, please refer to [the excel](https://github.com/dads7202/assignment2/blob/main/fileReference/Reference.xlsx).
 **Column in this excel** <br>
@@ -56,7 +56,7 @@ To get data ready for model: <br>
 **Data splitting (train/val/test):** <br>
 `validation_split: 0.1`
 
-## 3 Model
+## 3. Model
 We use `ImageNet` as the pre-trained weights on model, `Adam` as optimizer, categorical `crossentropy` as loss function for multi-class classification task, and `224 x 224` as input size. 
 ## 3.1 VGG16
 Before fine-tuning the layers of pre-trained model, we attempt to optimize variables such as batch size, and epoch for original pre-trained vgg16 model. 
@@ -80,13 +80,13 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 ## 3.3 DenseNet16
 ###
 
-## 4 Prediction
+## 4. Prediction
 
-## 5 Result
+## 5. Result
 
-## 6 Discussion
+## 6. Discussion
 
-## 7 Conclusion
+## 7. Conclusion
 In this project aims to build the best CNN model with pre-trained models that gives the highest accuracy for multi-class image classification of 5 types of painting. We experiment with original (ImageNet) and pre-trained models including VGG16, NASNetMobile, and DenseNet121 and compare the results between the original pre-trained and models after fine-tuning. 
 
 Experimental results show that  
@@ -94,10 +94,10 @@ Experimental results show that
 - The performance models of fine-tuning CNN might improve the accuracy or might not, it really depends on the complexity of the problem. 
 - The model with the most accuracy on test dataset is DenseNet121 (model 1 the fine-tuning CNN). 
 
-## 8 Reference
+## 8. Reference
 Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9SUWL8Vyt67vVnleLwDnme6V?usp=sharing 
 
-## 9 Citing
+## 9. Citing
 ```  
     @inproceedings{plummerCITE2018, 
 	Author = {Nidchapan N., Prapatsorn T., Chotika B., Juthamas P., Naliya M.}, 
@@ -107,12 +107,12 @@ Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9S
     } 
 ```  
 
-## 10 Member, Contribution and Responsibility
+## 10. Member, Contribution and Responsibility
 
 
 
 
-## 11 End Credit
+## 11. End Credit
 This project is a part of subject DADS7202. Data Analytics and Data Science. NIDA
 
 
