@@ -108,7 +108,7 @@ We experimented with original model (ImageNet) by validate epoch between 0 and 2
 Experimental results showed the NASNetMobile did not performed well and ended up overfitting after only approximately 7 epochs. We supposed NASNetMobile probably isn't suitable for this dataset. First, we selected 90 epochs before attempting to fine-tune the model because it's a steady state of accuracy as shown in the graphs. The accuracy was not different between 90 and 200 epochs. Next, we attempted to find the best conditions for this model.
 
 ### 3.2.2 Fine-tuning pre-trained NASNetMobile model
-![Imgur](https://i.imgur.com/O0TSWyY.png)
+![Imgur](https://i.imgur.com/O0TSWyY.png) <br> 
 We attempted to fine-tune the NASNetMobile pre-trained model by adding dense layers and dropout layers, as shown in figure, with a batch size of 32 and 90 epochs. We found that
 - As we find ways to improve model accuracy by increasing the number of hidden layers, we found that the accuracy depends on the complexity of the problem. Thus, the accuracy increased from Model 1 (accuracy from test sets 78.47 ± 1.30%) to Model 2 (accuracy from test sets 81.25 ± 2.25%) but decreased from Model 2 to Model 3 (accuracy from test sets 79.51 ± 1.96%). 
 - From Model 2 to Model 3, we increased 2 dense layers and a dropout layer but doing so lowered the accuracy on the test set. We suspected that the number of layers in model 2 is already sufficient. Too many layers can cause overfitting to the network. It performs best on the training data, but it won't be able to generalize to new unseen data.
@@ -116,8 +116,12 @@ We attempted to fine-tune the NASNetMobile pre-trained model by adding dense lay
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 3.3 DenseNet16
-###
+## 3.3 DenseNet121
+We utilized ImageNet as the pre-trained weights on model, Adam as optimizer, categorical crossentropy as loss function for multi-class classification task, and 224 x 224 as input size. <br>
+
+### 3.3.1 Epoch
+
+
 
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
