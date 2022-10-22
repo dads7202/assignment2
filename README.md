@@ -23,7 +23,7 @@
 10. [Member, Contribution and Responsibility](#10-member,-contribution-and-responsibility) <br>
 11. [End Credit](#11-end-credit) <br>
 
-## 1. Introduction
+## 💬 1. Introduction
 This project aims to build the best deep learning model that gives the highest accuracy for image classification task. We trained 3 different pre-trained models including VGG16, NASNetMobile, and DenseNet121 on a digitized painting dataset to compare their art classification performances between the original pre-trained models and fine-tuned models. 
 
 Hierarchy of Painting Genre, the concept of categorizing Western paintings into 5 “genre” or “category” was proposed in 1669 by Andre Felibien the secretary of the French Academie des beaux-des Beaux-Arts (Academy of Fine Arts). It is a system that ranks paintings in terms of its cultural value. The five genres listed in order of their official ranking or importance, are as follows:  
