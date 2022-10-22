@@ -1,8 +1,5 @@
 # DADS7202 Assignment 2 (Group Moo-ka-ta)
-
-The objective of this project is `multi-class image classification`of `Fine-Art painting` (5 categories) with `CNN models`. <br>
-To build the best model that gives the highest accuracy for this task, we experiment with pre-trained models including VGG16, NASNetMobile, and DenseNet121 
-and compare the results between the original pre-trained and the model after fine-tuning.
+[0_Head](https://i.imgur.com/weolMpc.png)
 
 ## 🌟 Highlight
 
@@ -38,7 +35,7 @@ This project aims to build the best model that gives the highest accuracy for th
 - image_name: type of painting_index.type file such as genre_001.jpg <br>
 - url: the reference in each image. <br>
 
-Dataset in this assignment are `fine-art painting images` which classified into `5 categories`. <br>
+The dataset in this assignment are `fine-art painting images` which are classified into `5 categories`. <br>
 Total images are `1,106 images`, including,
 1. Genre Painting 223 images
 2. History Painting 210 images
@@ -62,6 +59,10 @@ To get data ready for model: <br>
 ## 3. Model
 We use `ImageNet` as the pre-trained weights on model, `Adam` as optimizer, categorical `crossentropy` as loss function for multi-class classification task, and `224 x 224` as input size. 
 ## 3.1 VGG16
+Before fine-tuning the layers of pre-trained model, we attempt to optimize variables such as batch size, and epoch for original pre-trained vgg16 model. 
+###3.1.1 Batch Size
+we experiment with batch sizes of `16`, `32`, and `64` to find out which batch size results in the `highest accuracy` and `lowest loss` for test set at epoch 25, original pre-trained model. 
+
 
 ## 3.2 NASNetMobile
 
