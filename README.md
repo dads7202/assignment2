@@ -137,10 +137,29 @@ We attempted to fine-tune the NASNetMobile pre-trained model by adding dense lay
 
 ## 6. Discussion
 <p> We chose VGG16 as our first pre-trained model since, from previous published works, it tends to perform well on general image classifications problems. We experimented with 16, 32 and 64 batch size and found that batch size 32 gave the highest validation accuracy with lowest validation loss. We then utilized this number of batch size as default throughout the experimentation. </p>
+
 ![Imgur](https://i.imgur.com/vhmiuNt.png)
 ![Imgur](https://i.imgur.com/RtNbLsn.png)
+
 <p> This finding aligned with what has been observed in practice that large-batch methods tend to converge to sharp minimizers of the training and testing functions and leads to poorer generalization. <br>
 We hand-picked 3 pre-trained models that performed best in the preliminary testing: VGG16, NASNetMobile, and DenseNet121 with 4 other pre-trained models being Xception, ResNET50, NASNetLarge, and EfficientNet. Then we compared performances of the original 3 models with 3 other fine-tuned models each. Fine-tuning was done by (1) adjusting epochs and (2) adding layers to the models. </p>
+
+#### The effect of epoch on the model performance.
+<p> We observed that out of the 3 models at batch size 32, NASNetMobile showed overfitting tendencies at only after 7th epoch. There were no significant differences observed in the model performances at later epoch. We picked epoch 90 for NASNetMobile before adding layers to the model. <br>
+VGG16 and DenseNet121 showed signs of overfitting at 100th and 150th epoch respectively. </p>
+
+![Imgur](https://i.imgur.com/tS0mtBw.png) <br>
+
+<p> We found that for this specific dataset, the optimal number of epochs ranges widely among the selected pre-trained model, but the desirable loss and accuracy in both the training set and test set is observed at around 90 epochs. </p>
+
+#### The effect of hidden layers on the model performance.
+<p> In all 3 models we used Rectified Linear Unit (ReLU) activation function in the dense layers because it is well-studied that ReLU outperformed other activation functions, such as Sigmoid and Hyperbolic tangent. </p>
+
+![Imgur](https://i.imgur.com/QqCVB0z.png) <br>
+
+<p> The best performers of each model have 3-5 dense layers. We observed that the more dense layer added to the model, the less ability of the model to generalized. <br>
+Adding dropout layers and increasing dropout rates to the model help with overfitting issue as best observed in NASNetMobile Model 2. <br>
+The results after fine-tuning compared to the original pretrained models, correspondingly, demonstrated that fine-tuned models outperformed the original models in the prediction of painting genre. </p>
 
 
 
