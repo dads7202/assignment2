@@ -233,6 +233,11 @@ Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9S
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 9. Member, Contribution and Responsibility
+1. 6310412022 (20%) Prepare dataset , review & VGG16 and result 
+2. 6410422007 (20%) Prepare dataset , review & data collection and result 
+3. 6410422016 (20%) Prepare dataset, review & NASNetMobile, conclusion 
+4. 6410422022 (20%) Prepare dataset, review & DenseNet121 and result 
+5. 6410422030 (20%) Prepare dataset, review & introduction and discussion 
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
