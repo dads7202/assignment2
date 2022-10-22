@@ -1,5 +1,5 @@
 # DADS7202 Assignment 2 (Group Moo-ka-ta)
-[0_Head](https://i.imgur.com/weolMpc.png)
+![0_Head](https://i.imgur.com/weolMpc.png)
 
 ## 🌟 Highlight
 
