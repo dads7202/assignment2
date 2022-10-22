@@ -185,7 +185,7 @@ Comparing all the results from the best-performed model of each backbone, we fou
 ![Imgur](https://i.imgur.com/RtNbLsn.png)
 
 <p> This finding aligned with what has been observed in practice that large-batch methods tend to converge to sharp minimizers of the training and testing functions and leads to poorer generalization. <br>
-We hand-picked 3 pre-trained models that performed best in the preliminary testing: VGG16, NASNetMobile, and DenseNet121 with 4 other pre-trained models being Xception, ResNET50, NASNetLarge, and EfficientNet. Then we compared performances of the original 3 models with 3 other fine-tuned models each. Fine-tuning was done by (1) adjusting epochs and (2) adding layers to the models. </p>
+We hand-picked 3 pre-trained models that performed best in the preliminary testing: VGG16, NASNetMobile, and DenseNet121. Then we compared performances of the original 3 models with 3 other fine-tuned models each. Fine-tuning were done by (1) adjusting epochs and (2) adding layers to the models. </p>
 
 #### The effect of epoch on the model performance.
 <p> We observed that out of the 3 models at batch size 32, NASNetMobile showed overfitting tendencies at only after 7th epoch. There were no significant differences observed in the model performances at later epoch. We picked epoch 90 for NASNetMobile before adding layers to the model. <br>
