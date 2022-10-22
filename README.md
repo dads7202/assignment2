@@ -79,7 +79,7 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 ### 3.1.2 Epoch
 Overfitting occurs when a model performs well on training data but poorly on validation or unknown data. To avoid overfitting, we experimented with 200 epochs to observe the trend of curve loss at batch sizes of 32, original pre-trained model.
 ![Imgur](https://i.imgur.com/hgeZIDr.png)
-![Imgur](https://i.imgur.com/CIP04V1.png)
+![Imgur](https://i.imgur.com/CIP04V1.png) <br>
 - From the graphs presented, validation loss begins to exceed training loss indicating that overfitting occurs when the epoch exceeds 100. The ultimate epoch for getting the highest accuracy and the lowest validation loss for the original pre-trained model is 90.
 - We chose the epoch of 90 to compare the results of the original pre-trained model and the fine-tuned models
 
