@@ -158,7 +158,7 @@ As you can see from table 4.2, all three fine-tuned NASNetMobile models produced
 ![Imgur](https://i.imgur.com/TvFKAg4.png) <br> 
 Table 4.3 comparing performances of original pre-trained DenseNet121 and three fine-tuned DenseNet121 models
 
-As you can see from table 4.3, of the three fine-tuned DenseNet121 models, Model 2, has less accuracy on the test dataset than the original pre-trained DenseNet121 model (with accuracy of 73.13 ± 0.02%). **Model 1** is the most accurate model compared with all DenseNet121 models, with an accuracy of 83.54 ± 0.02% on the test dataset, with batch size of 32 and 150 epochs. However, model 3 has the least loss on the test dataset with 62.26 ± 0.06%.
+As you can see from table 4.3, one of the three fine-tuned DenseNet121 models, Model 2, has less accuracy on the test dataset than the original pre-trained DenseNet121 model (with accuracy of 73.13 ± 0.02%). **Model 1** is the most accurate model compared with all DenseNet121 models, with an accuracy of 83.54 ± 0.02% on the test dataset, with batch size of 32 and 150 epochs. However, model 3 has the least loss on the test dataset with 62.26 ± 0.06%.
 
 #### 4.5 Compare the best performance of each model
 
