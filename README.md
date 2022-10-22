@@ -128,7 +128,8 @@ we experiment with batch sizes of `16`, `32`, and `64` to find out which batch s
 
 ![Imgur](https://i.imgur.com/YjSRso1.png)
 
-![![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
+
+[![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 7. Conclusion
