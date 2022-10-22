@@ -7,9 +7,9 @@
 1. [Introduction](#1-introduction) <br>
 2. [Data Preparation](#2-data-preparation) <br>
 3. [Model](#3-model)<br>
-   - [3.1 VGG16](#3.1-vgg16)<br>
-   - [3.2 NASNetMobile](#3.2-nasnetmobile) <br>
-   - [3.3 DenseNet121](#3.3-densenet121) <br>
+   - [3.1 VGG16](#3-1-vgg16)<br>
+   - [3.2 NASNetMobile](#3-2-nasnetmobile) <br>
+   - [3.3 DenseNet121](#3-3-densenet121) <br>
 4. [Prediction](#4-prediction) <br>
 5. [Result](#5-result) <br>
 6. [Discussion](#6-discussion) <br>
