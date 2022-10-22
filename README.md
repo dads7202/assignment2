@@ -61,8 +61,7 @@ To get data ready for model: <br>
    - 4. `horizontal_flip`: Boolean. Randomly flip inputs horizontally. (True) 
    - 5. `vertical_flip`: Boolean. Randomly flip inputs vertically. (True) 
 
-**Data splitting (train/val/test):** <br>
-`validation_split: 0.1`
+**Data splitting (train/val/test):** <br> `validation_split: 0.1`
 <br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
