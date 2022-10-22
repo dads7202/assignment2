@@ -158,7 +158,7 @@ Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9S
 ```  
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
-## 9. Member, Contribution and Responsibility
+## 9. Members, Contribution and Responsibility
 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
