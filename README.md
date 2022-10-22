@@ -26,6 +26,7 @@ This project aims to build the best model that gives the highest accuracy for th
 - Genre Painting 
 - Landscape Painting 
 - Still Life Painting <br>
+
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 2. Data Preparation
@@ -117,11 +118,12 @@ Experimental results show that
 - The performance models of all fine-tuning CNN are better than the imageNet on our dataset. Our datasets do not exist in the original pretrained model. 
 - The performance models of fine-tuning CNN might improve the accuracy or might not, it really depends on the complexity of the problem. 
 - The model with the most accuracy on test dataset is DenseNet121 (model 1 the fine-tuning CNN). <br>
+ 
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 
 ## 8. Reference
-Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9SUWL8Vyt67vVnleLwDnme6V?usp=sharing 
+Google Drive for weight file: https://drive.google.com/drive/folders/1tMoJg7qz9SUWL8Vyt67vVnleLwDnme6V?usp=sharing <br>
 [![back-to-top](https://i.imgur.com/wJEM2Vt.png)](#table-of-contents)
 
 ## 9. Citing
